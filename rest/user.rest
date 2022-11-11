@@ -1,0 +1,29 @@
+GET http://localhost:3000/task HTTP/1.1
+
+###
+
+GET http://localhost:3000/task/636ea9364165fa9963d9b039 HTTP/1.1
+
+###
+
+POST http://localhost:3000/task HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "new task",
+    "description": "new task description"
+}
+
+###
+
+PUT http://localhost:3000/task/636ea9364165fa9963d9b039 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "new task update",
+    "description": "new task description update"
+}
+
+###
+
+DELETE http://localhost:3000/task/636ea9364165fa9963d9b039 HTTP/1.1
